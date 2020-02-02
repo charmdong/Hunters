@@ -11,12 +11,12 @@ public class B_1547_Ball {
 		boolean[] arr = new boolean[4];
 		boolean test = false;
 
-		// °øÀÇ À§Ä¡
+		// ê³µì˜ ìœ„ì¹˜
 		arr[1] = true;
 		arr[2] = false;
 		arr[3] = false;
 
-		// ÄÅÀÇ À§Ä¡ º¯°æ
+		// ì»µì˜ ìœ„ì¹˜ ë³€ê²½
 		for (int i = 0; i < lotation; i++) {
 			int num1 = sc.nextInt();
 			int num2 = sc.nextInt();
@@ -27,7 +27,7 @@ public class B_1547_Ball {
 
 		} // end of for
 
-		// Ãâ·Â
+		// ì¶œë ¥
 		for (int i = 1; i < 4; i++) {
 			if (arr[i] == true)
 				System.out.println(i);
