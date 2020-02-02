@@ -4,35 +4,35 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class BJ_2164_Ä«µå2 {
+public class BJ_2164_ì¹´ë“œ2 {
 
 	private static Scanner sc = new Scanner(System.in);
 	static int result;
 
 	public static void main(String[] args) {
-		Queue queue = new LinkedList(); // queue ÇüÅÂ·Î ¼±¾ð
+		Queue queue = new LinkedList(); // queue í˜•íƒœë¡œ ì„ ì–¸
 
 		int N = sc.nextInt();
 
 		for (int i = 1; i <= N; i++) {
 
-			queue.offer(i); // offer = ¼øÂ÷º¸°ü
+			queue.offer(i); // offer = ìˆœì°¨ë³´ê´€
 
 		}
 
 		while (!queue.isEmpty()) {
 
-			Object out = queue.poll(); // poll = °¡Àå¸ÕÀú º¸°üÇÑ °ª ²¨³»°í ¹ÝÈ¯
+			Object out = queue.poll(); // poll = ê°€ìž¥ë¨¼ì € ë³´ê´€í•œ ê°’ êº¼ë‚´ê³  ë°˜í™˜
 			result = (int) out;
 			
 
-			if (queue.isEmpty()) // ºñ¾îÀÖ´ÂÁö ÆÇº°
+			if (queue.isEmpty()) // ë¹„ì–´ìžˆëŠ”ì§€ íŒë³„
 
 				break;
 
-			Object in = queue.poll(); // µÎ¹øÂ° °ª ²¨³½µÚ
+			Object in = queue.poll(); // ë‘ë²ˆì§¸ ê°’ êº¼ë‚¸ë’¤
 
-			queue.offer(in); // µÚ¿¡ ´Ù½Ã ³ÖÀ½.
+			queue.offer(in); // ë’¤ì— ë‹¤ì‹œ ë„£ìŒ.
 
 		}
 		System.out.print(result);
