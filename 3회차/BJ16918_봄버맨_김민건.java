@@ -33,5 +33,4 @@ public class B_1547_Ball {
 				System.out.println(i);
 		} 
 	}
-
 }
