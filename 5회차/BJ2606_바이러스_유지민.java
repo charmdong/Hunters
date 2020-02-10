@@ -23,6 +23,22 @@ public class BJ2606_바이러스_유지민 {
 		}
 		dfs(1);
 		System.out.println(count);
+		
+		
+//		stack.push(1);
+//		while (!stack.isEmpty()) {
+//			int standard = stack.pop();
+//			visited[standard] = true;
+//			for (int i = 1; i <= num; i++) {
+//				if (!visited[i] && com[standard][i] == 1) {
+//					visited[i] = true;
+//					stack.push(i);
+//					count++;
+//				}
+//			}
+//		}
+//
+//		System.out.println(count);
 
 	}
 	static void dfs(int index) {
